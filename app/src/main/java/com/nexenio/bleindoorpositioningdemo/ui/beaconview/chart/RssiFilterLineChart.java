@@ -6,12 +6,13 @@ import android.graphics.PointF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 
-import com.nexenio.bleindoorpositioning.ble.advertising.AdvertisingPacket;
-import com.nexenio.bleindoorpositioning.ble.beacon.Beacon;
-import com.nexenio.bleindoorpositioning.ble.beacon.signal.ArmaFilter;
-import com.nexenio.bleindoorpositioning.ble.beacon.signal.KalmanFilter;
-import com.nexenio.bleindoorpositioning.ble.beacon.signal.MeanFilter;
-import com.nexenio.bleindoorpositioning.ble.beacon.signal.WindowFilter;
+import com.kapcite.bleindoorpositioning.ble.advertising.AdvertisingPacket;
+import com.kapcite.bleindoorpositioning.ble.beacon.Beacon;
+import com.kapcite.bleindoorpositioning.ble.beacon.signal.ArmaFilter;
+import com.kapcite.bleindoorpositioning.ble.beacon.signal.KalmanFilter;
+import com.kapcite.bleindoorpositioning.ble.beacon.signal.MeanFilter;
+import com.kapcite.bleindoorpositioning.ble.beacon.signal.WindowFilter;
+
 import com.nexenio.bleindoorpositioningdemo.ui.beaconview.ColorUtil;
 
 import java.util.ArrayList;

@@ -11,13 +11,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.nexenio.bleindoorpositioning.ble.beacon.Beacon;
-import com.nexenio.bleindoorpositioning.ble.beacon.BeaconManager;
-import com.nexenio.bleindoorpositioning.ble.beacon.BeaconUpdateListener;
-import com.nexenio.bleindoorpositioning.ble.beacon.filter.GenericBeaconFilter;
-import com.nexenio.bleindoorpositioning.location.Location;
-import com.nexenio.bleindoorpositioning.location.LocationListener;
-import com.nexenio.bleindoorpositioning.location.provider.LocationProvider;
+import com.kapcite.bleindoorpositioning.ble.beacon.Beacon;
+import com.kapcite.bleindoorpositioning.ble.beacon.BeaconManager;
+import com.kapcite.bleindoorpositioning.ble.beacon.BeaconUpdateListener;
+import com.kapcite.bleindoorpositioning.ble.beacon.filter.GenericBeaconFilter;
+import com.kapcite.bleindoorpositioning.location.Location;
+import com.kapcite.bleindoorpositioning.location.LocationListener;
+import com.kapcite.bleindoorpositioning.location.provider.LocationProvider;
+
 import com.nexenio.bleindoorpositioningdemo.R;
 import com.nexenio.bleindoorpositioningdemo.ui.beaconview.BeaconViewFragment;
 import com.nexenio.bleindoorpositioningdemo.ui.beaconview.ColorUtil;

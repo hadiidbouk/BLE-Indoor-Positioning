@@ -1,6 +1,6 @@
 package com.nexenio.bleindoorpositioningdemo.location;
 
-import com.nexenio.bleindoorpositioning.location.Location;
+import com.kapcite.bleindoorpositioning.location.Location;
 
 /**
  * Some locations that might be useful for testing. Latitudes and longitudes are real values

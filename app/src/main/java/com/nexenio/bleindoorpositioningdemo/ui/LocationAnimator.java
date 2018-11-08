@@ -4,9 +4,9 @@ import android.animation.Animator;
 import android.animation.ValueAnimator;
 import android.support.annotation.NonNull;
 
-import com.nexenio.bleindoorpositioning.location.Location;
-import com.nexenio.bleindoorpositioning.location.LocationListener;
-import com.nexenio.bleindoorpositioning.location.provider.LocationProvider;
+import com.kapcite.bleindoorpositioning.location.Location;
+import com.kapcite.bleindoorpositioning.location.LocationListener;
+import com.kapcite.bleindoorpositioning.location.provider.LocationProvider;
 
 /**
  * Created by steppschuh on 22.11.17.

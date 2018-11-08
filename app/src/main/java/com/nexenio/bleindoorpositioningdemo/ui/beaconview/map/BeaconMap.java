@@ -12,14 +12,15 @@ import android.graphics.Shader;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 
-import com.nexenio.bleindoorpositioning.ble.advertising.AdvertisingPacket;
-import com.nexenio.bleindoorpositioning.ble.beacon.Beacon;
-import com.nexenio.bleindoorpositioning.location.Location;
-import com.nexenio.bleindoorpositioning.location.LocationListener;
-import com.nexenio.bleindoorpositioning.location.distance.DistanceUtil;
-import com.nexenio.bleindoorpositioning.location.projection.CanvasProjection;
-import com.nexenio.bleindoorpositioning.location.projection.EquirectangularProjection;
-import com.nexenio.bleindoorpositioning.location.provider.LocationProvider;
+import com.kapcite.bleindoorpositioning.ble.advertising.AdvertisingPacket;
+import com.kapcite.bleindoorpositioning.ble.beacon.Beacon;
+import com.kapcite.bleindoorpositioning.location.Location;
+import com.kapcite.bleindoorpositioning.location.LocationListener;
+import com.kapcite.bleindoorpositioning.location.distance.DistanceUtil;
+import com.kapcite.bleindoorpositioning.location.projection.CanvasProjection;
+import com.kapcite.bleindoorpositioning.location.projection.EquirectangularProjection;
+import com.kapcite.bleindoorpositioning.location.provider.LocationProvider;
+
 import com.nexenio.bleindoorpositioningdemo.ui.LocationAnimator;
 import com.nexenio.bleindoorpositioningdemo.ui.beaconview.BeaconView;
 

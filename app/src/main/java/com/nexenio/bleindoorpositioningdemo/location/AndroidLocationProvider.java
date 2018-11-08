@@ -30,9 +30,9 @@ import android.support.v4.app.ActivityCompat;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.nexenio.bleindoorpositioning.location.Location;
-import com.nexenio.bleindoorpositioning.location.LocationListener;
-import com.nexenio.bleindoorpositioning.location.provider.LocationProvider;
+import com.kapcite.bleindoorpositioning.location.Location;
+import com.kapcite.bleindoorpositioning.location.LocationListener;
+import com.kapcite.bleindoorpositioning.location.provider.LocationProvider;
 
 import java.util.HashSet;
 import java.util.Set;

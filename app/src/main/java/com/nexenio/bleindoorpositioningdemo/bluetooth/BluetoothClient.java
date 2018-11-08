@@ -8,12 +8,12 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import com.nexenio.bleindoorpositioning.ble.advertising.AdvertisingPacket;
-import com.nexenio.bleindoorpositioning.ble.beacon.Beacon;
-import com.nexenio.bleindoorpositioning.ble.beacon.BeaconManager;
-import com.nexenio.bleindoorpositioning.ble.beacon.IBeacon;
-import com.nexenio.bleindoorpositioning.location.Location;
-import com.nexenio.bleindoorpositioning.location.provider.IBeaconLocationProvider;
+import com.kapcite.bleindoorpositioning.ble.advertising.AdvertisingPacket;
+import com.kapcite.bleindoorpositioning.ble.beacon.Beacon;
+import com.kapcite.bleindoorpositioning.ble.beacon.BeaconManager;
+import com.kapcite.bleindoorpositioning.ble.beacon.IBeacon;
+import com.kapcite.bleindoorpositioning.location.Location;
+import com.kapcite.bleindoorpositioning.location.provider.IBeaconLocationProvider;
 import com.polidea.rxandroidble.RxBleClient;
 import com.polidea.rxandroidble.scan.ScanResult;
 import com.polidea.rxandroidble.scan.ScanSettings;

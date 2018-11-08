@@ -14,22 +14,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.nexenio.bleindoorpositioning.IndoorPositioning;
-import com.nexenio.bleindoorpositioning.ble.advertising.IndoorPositioningAdvertisingPacket;
-import com.nexenio.bleindoorpositioning.ble.beacon.Beacon;
-import com.nexenio.bleindoorpositioning.ble.beacon.BeaconManager;
-import com.nexenio.bleindoorpositioning.ble.beacon.BeaconUpdateListener;
-import com.nexenio.bleindoorpositioning.ble.beacon.Eddystone;
-import com.nexenio.bleindoorpositioning.ble.beacon.filter.BeaconFilter;
-import com.nexenio.bleindoorpositioning.ble.beacon.filter.EddystoneBeaconFilter;
-import com.nexenio.bleindoorpositioning.ble.beacon.filter.IBeaconFilter;
-import com.nexenio.bleindoorpositioning.location.LocationListener;
+import com.kapcite.bleindoorpositioning.IndoorPositioning;
+import com.kapcite.bleindoorpositioning.ble.beacon.Beacon;
+import com.kapcite.bleindoorpositioning.ble.beacon.BeaconManager;
+import com.kapcite.bleindoorpositioning.ble.beacon.BeaconUpdateListener;
+import com.kapcite.bleindoorpositioning.ble.beacon.filter.BeaconFilter;
+import com.kapcite.bleindoorpositioning.ble.beacon.filter.EddystoneBeaconFilter;
+import com.kapcite.bleindoorpositioning.location.LocationListener;
+
 import com.nexenio.bleindoorpositioningdemo.R;
 import com.nexenio.bleindoorpositioningdemo.location.AndroidLocationProvider;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 public abstract class BeaconViewFragment extends Fragment {
 
