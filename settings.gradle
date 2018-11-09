@@ -1,1 +1,1 @@
-include ':app', ':BLE Indoor Positioning', ':BLEIndoorPositioningAAR'
+include ':app', ':BLEIndoorPositioningAAR'
