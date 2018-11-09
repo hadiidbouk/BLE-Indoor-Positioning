@@ -1,3 +1,4 @@
+apply plugin: 'maven-publish'
 apply plugin: 'com.android.library'
 
 android {
@@ -8,9 +9,11 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
 
+    lintOptions {
+        abortOnError false
     }
 
     buildTypes {
@@ -19,7 +22,55 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+}
 
+// copy mappings file somewhere safe (app/destination)
+android.libraryVariants.all { variant ->
+    if (variant.buildType.name == 'distributable') {
+        if (variant.mappingFile != null) {
+            tasks.create(name: "copyDistributableAarProguardMapping", type: Copy) {
+                group "distribution"
+                String today = new Date().format('yyyyMMdd_HHmmss')
+                def toDir = rootProject.file("app/destination")
+                from variant.mappingFile.path
+                rename '.*', "${project.name}_${today}_mapping.txt"
+                into toDir
+            }
+            bundleDistributableAar.finalizedBy copyDistributableAarProguardMapping
+        }
+    }
+}
+
+task sourceJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier "source"
+}
+
+publishing {
+    publications {
+        msdk(MavenPublication) {
+            groupId 'com.kapcite.BLEIndoorPositioning'
+            artifactId 'BLEIndoorPositioning'
+            version '1.0'
+            artifact(bundleReleaseAar)
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.compile.allDependencies.each {
+                    if(it.group != null && (it.name != null || "unspecified".equals(it.name)) && it.version != null) {
+                        def dependencyNode = dependenciesNode.appendNode('dependency')
+                        dependencyNode.appendNode('groupId', it.group)
+                        dependencyNode.appendNode('artifactId', it.name)
+                        dependencyNode.appendNode('version', it.version)
+                    }
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            url "C:/Users/ziada/.m2/repository"
+        }
+    }
 }
 
 dependencies {
@@ -33,3 +84,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
+apply plugin: 'com.github.dcendents.android-maven'
