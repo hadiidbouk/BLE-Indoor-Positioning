@@ -31,7 +31,6 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:11.6.0'
     implementation "com.polidea.rxandroidble:rxandroidble:1.4.3"
 
-//    implementation project(':BLE Indoor Positioning')
     implementation project(':BLEIndoorPositioningAAR')
 
     testImplementation 'junit:junit:4.12'
