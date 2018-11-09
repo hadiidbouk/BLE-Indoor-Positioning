@@ -6,10 +6,6 @@ import com.kapcite.bleindoorpositioning.location.provider.IBeaconLocationProvide
 
 import java.util.UUID;
 
-/**
- * Created by steppschuh on 15.11.17.
- */
-
 public class IBeacon<P extends IBeaconAdvertisingPacket> extends Beacon<P> {
 
     public static final int CALIBRATION_DISTANCE_DEFAULT = 1;

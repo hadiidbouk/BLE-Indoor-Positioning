@@ -4,10 +4,6 @@ import com.kapcite.bleindoorpositioning.ble.advertising.EddystoneAdvertisingPack
 import com.kapcite.bleindoorpositioning.location.provider.BeaconLocationProvider;
 import com.kapcite.bleindoorpositioning.location.provider.EddystoneLocationProvider;
 
-/**
- * Created by steppschuh on 15.11.17.
- */
-
 public class Eddystone<P extends EddystoneAdvertisingPacket> extends Beacon<P> {
 
     public static final int CALIBRATION_DISTANCE_DEFAULT = 0;

@@ -4,10 +4,6 @@ import com.kapcite.bleindoorpositioning.ble.beacon.Beacon;
 
 import java.util.Arrays;
 
-/**
- * Created by steppschuh on 15.11.17.
- */
-
 public abstract class AdvertisingPacket {
 
     protected byte[] data;

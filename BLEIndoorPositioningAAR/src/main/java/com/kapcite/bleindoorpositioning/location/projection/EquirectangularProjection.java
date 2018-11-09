@@ -9,7 +9,7 @@ import java.util.List;
  * projection) maps meridians to vertical straight lines of constant spacing (for meridional
  * intervals of constant spacing), and circles of latitude to horizontal straight lines of constant
  * spacing (for constant intervals of parallels).
- *
+ * <p>
  * It has become a standard for global raster datasets, such as Celestia and NASA World Wind,
  * because of the particularly simple relationship between the position of an image pixel on the map
  * and its corresponding geographic location on Earth.

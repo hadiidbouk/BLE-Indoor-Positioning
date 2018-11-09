@@ -7,10 +7,6 @@ import com.kapcite.bleindoorpositioning.ble.beacon.Beacon;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by leon on 03.01.18.
- */
-
 public class MeanFilter extends WindowFilter {
 
     public MeanFilter() {

@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by leon on 29.03.18.
- */
-
 public class LocationUtil {
 
     public static Location calculateMeanLocationFromLast(List<Location> locationList, long amount, TimeUnit timeUnit) {

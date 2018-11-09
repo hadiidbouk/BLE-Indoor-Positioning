@@ -48,12 +48,15 @@ public class EddystoneAdvertisingPacket extends AdvertisingPacket {
         }
         return true;
     }
+
     public static byte[] getFlags(byte[] data) {
         return Arrays.copyOfRange(data, 0, 3);
     }
+
     public static byte[] getEddystoneUuid(byte[] data) {
         return Arrays.copyOfRange(data, 3, 3 + 4);
     }
+
     public static byte[] getFrameBytes(byte[] data) {
         return Arrays.copyOfRange(data, 7, data.length);
     }
@@ -72,6 +75,7 @@ public class EddystoneAdvertisingPacket extends AdvertisingPacket {
         }
         return flagsBytes;
     }
+
     public void setFlagsBytes(byte[] flagsBytes) {
         this.flagsBytes = flagsBytes;
     }
@@ -82,6 +86,7 @@ public class EddystoneAdvertisingPacket extends AdvertisingPacket {
         }
         return eddystoneUuidBytes;
     }
+
     public void setEddystoneUuidBytes(byte[] eddystoneUuidBytes) {
         this.eddystoneUuidBytes = eddystoneUuidBytes;
     }
@@ -92,6 +97,7 @@ public class EddystoneAdvertisingPacket extends AdvertisingPacket {
         }
         return frameBytes;
     }
+
     public void setFrameBytes(byte[] frameBytes) {
         this.frameBytes = frameBytes;
     }
@@ -102,6 +108,7 @@ public class EddystoneAdvertisingPacket extends AdvertisingPacket {
         }
         return measuredPowerByte;
     }
+
     public void setMeasuredPowerByte(byte measuredPowerByte) {
         this.measuredPowerByte = measuredPowerByte;
     }

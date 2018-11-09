@@ -3,15 +3,11 @@ package com.kapcite.bleindoorpositioning.ble.advertising;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by steppschuh on 05.02.18.
- */
-
 public class AdvertisingPacketFactoryManager {
 
     /**
      * A list of factories that may be used for creating {@link AdvertisingPacket}s.
-     *
+     * <p>
      * Note: The order of elements in this list is important! The first matching factory will always
      * be used. See {@link #getAdvertisingPacketFactory(byte[])}.
      */
@@ -30,7 +26,7 @@ public class AdvertisingPacketFactoryManager {
     /**
      * Iterates over {@link #advertisingPacketFactories} and returns the first element that returns
      * true when calling {@link AdvertisingPacketFactory#canCreateAdvertisingPacket(byte[])}.
-     *
+     * <p>
      * Returns null if no matching factory was found.
      */
     public AdvertisingPacketFactory getAdvertisingPacketFactory(byte[] advertisingData) {
@@ -46,7 +42,7 @@ public class AdvertisingPacketFactoryManager {
 
     /**
      * Inserts the specified factory into {@link #advertisingPacketFactories}.
-     *
+     * <p>
      * Note: The specified factory will be set to the first element in the list and thus may be used
      * before the already existing factories.
      */

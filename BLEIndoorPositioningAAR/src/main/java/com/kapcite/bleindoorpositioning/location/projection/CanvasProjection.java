@@ -2,10 +2,6 @@ package com.kapcite.bleindoorpositioning.location.projection;
 
 import com.kapcite.bleindoorpositioning.location.Location;
 
-/**
- * Created by steppschuh on 23.11.17.
- */
-
 public class CanvasProjection {
 
     private EquirectangularProjection geographicProjection;

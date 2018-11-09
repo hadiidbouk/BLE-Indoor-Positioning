@@ -1,10 +1,10 @@
 package com.kapcite.bleindoorpositioning.location.multilateration;
 
-import com.kapcite.bleindoorpositioning.trilateration.NonLinearLeastSquaresSolver;
-import com.kapcite.bleindoorpositioning.trilateration.TrilaterationFunction;
 import com.kapcite.bleindoorpositioning.ble.beacon.Beacon;
 import com.kapcite.bleindoorpositioning.location.Location;
 import com.kapcite.bleindoorpositioning.location.projection.SphericalMercatorProjection;
+import com.kapcite.bleindoorpositioning.trilateration.NonLinearLeastSquaresSolver;
+import com.kapcite.bleindoorpositioning.trilateration.TrilaterationFunction;
 
 import org.apache.commons.math3.fitting.leastsquares.LeastSquaresOptimizer;
 import org.apache.commons.math3.fitting.leastsquares.LevenbergMarquardtOptimizer;
@@ -13,8 +13,6 @@ import org.apache.commons.math3.linear.RealVector;
 import java.util.List;
 
 /**
- * Created by steppschuh on 14.12.17.
- *
  * "The Mathematics Behind a Local Positioning System" http://inside.mines.edu/~whereman/talks/TurgutOzal-11-Trilateration.pdf
  */
 

@@ -4,10 +4,6 @@ import com.kapcite.bleindoorpositioning.ble.beacon.Beacon;
 import com.kapcite.bleindoorpositioning.ble.beacon.Eddystone;
 import com.kapcite.bleindoorpositioning.ble.beacon.IBeacon;
 
-/**
- * Created by steppschuh on 22.11.17.
- */
-
 public abstract class BeaconDistanceCalculator {
 
     /**

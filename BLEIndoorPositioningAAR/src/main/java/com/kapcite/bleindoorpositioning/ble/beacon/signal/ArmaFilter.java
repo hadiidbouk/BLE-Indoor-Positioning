@@ -8,8 +8,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by leon on 20.12.17.
- *
+ * <p>
  * This filter calculates its rssi on base of an auto regressive moving average (ARMA) It needs only
  * the current value to do this; the general formula is  n(t) = n(t-1) - c * (n(t-1) - n(t)) where c
  * is a coefficient, that denotes the smoothness - the lower the value, the smoother the average

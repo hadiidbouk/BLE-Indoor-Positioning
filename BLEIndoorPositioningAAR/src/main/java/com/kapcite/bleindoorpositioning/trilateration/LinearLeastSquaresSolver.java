@@ -1,13 +1,15 @@
 package com.kapcite.bleindoorpositioning.trilateration;
 
-import org.apache.commons.math3.linear.*;
+import org.apache.commons.math3.linear.Array2DRowRealMatrix;
+import org.apache.commons.math3.linear.ArrayRealVector;
+import org.apache.commons.math3.linear.DecompositionSolver;
+import org.apache.commons.math3.linear.QRDecomposition;
+import org.apache.commons.math3.linear.RealMatrix;
+import org.apache.commons.math3.linear.RealVector;
 
 /**
- *
  * For testing only. A linear approach to solve the Trilateration problem.
  * see http://inside.mines.edu/~whereman/talks/TurgutOzal-11-Trilateration.pdf
- *
- * @author scott
  */
 public class LinearLeastSquaresSolver {
 
@@ -60,11 +62,11 @@ public class LinearLeastSquaresSolver {
         RealVector b = new ArrayRealVector(bd, false);
         DecompositionSolver solver = new QRDecomposition(A).getSolver();
         RealVector x;
-        if(!solver.isNonSingular()) {
+        if (!solver.isNonSingular()) {
             // bummer...
             x = new ArrayRealVector(new double[positionDimension]);
         } else {
-             x = solver.solve(b);
+            x = solver.solve(b);
         }
 
         return x.add(new ArrayRealVector(function.getPositions()[0]));

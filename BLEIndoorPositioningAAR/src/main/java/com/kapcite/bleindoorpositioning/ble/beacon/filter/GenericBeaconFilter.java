@@ -6,10 +6,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-/**
- * Created by steppschuh on 19.12.17.
- */
-
 public class GenericBeaconFilter<B extends Beacon> implements BeaconFilter<B> {
 
     protected String macAddress;

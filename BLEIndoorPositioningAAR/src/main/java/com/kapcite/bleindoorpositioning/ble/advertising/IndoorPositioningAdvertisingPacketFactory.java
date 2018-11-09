@@ -1,9 +1,5 @@
 package com.kapcite.bleindoorpositioning.ble.advertising;
 
-/**
- * Created by steppschuh on 02.02.18.
- */
-
 public class IndoorPositioningAdvertisingPacketFactory extends IBeaconAdvertisingPacketFactory {
 
     public IndoorPositioningAdvertisingPacketFactory() {

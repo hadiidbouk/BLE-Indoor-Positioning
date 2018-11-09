@@ -1,9 +1,8 @@
 package com.kapcite.bleindoorpositioning;
 
-import com.kapcite.bleindoorpositioning.ble.beacon.BeaconUpdateListener;
-import com.kapcite.bleindoorpositioning.location.provider.LocationProvider;
 import com.kapcite.bleindoorpositioning.ble.beacon.Beacon;
 import com.kapcite.bleindoorpositioning.ble.beacon.BeaconManager;
+import com.kapcite.bleindoorpositioning.ble.beacon.BeaconUpdateListener;
 import com.kapcite.bleindoorpositioning.ble.beacon.filter.BeaconFilter;
 import com.kapcite.bleindoorpositioning.ble.beacon.filter.GenericBeaconFilter;
 import com.kapcite.bleindoorpositioning.location.Location;
@@ -12,6 +11,7 @@ import com.kapcite.bleindoorpositioning.location.LocationPredictor;
 import com.kapcite.bleindoorpositioning.location.LocationUtil;
 import com.kapcite.bleindoorpositioning.location.distance.DistanceUtil;
 import com.kapcite.bleindoorpositioning.location.multilateration.Multilateration;
+import com.kapcite.bleindoorpositioning.location.provider.LocationProvider;
 
 import org.apache.commons.math3.exception.TooManyEvaluationsException;
 

@@ -7,10 +7,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
-/**
- * Created by steppschuh on 19.12.17.
- */
-
 public class IBeaconFilter<B extends IBeacon> extends GenericBeaconFilter<B> {
 
     protected final List<UUID> proximityUuids = new ArrayList<>();

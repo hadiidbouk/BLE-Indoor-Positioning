@@ -2,10 +2,6 @@ package com.kapcite.bleindoorpositioning.location.provider;
 
 import com.kapcite.bleindoorpositioning.ble.beacon.Eddystone;
 
-/**
- * Created by steppschuh on 16.11.17.
- */
-
 public class EddystoneLocationProvider<B extends Eddystone> extends BeaconLocationProvider<B> {
 
     public EddystoneLocationProvider(B beacon) {

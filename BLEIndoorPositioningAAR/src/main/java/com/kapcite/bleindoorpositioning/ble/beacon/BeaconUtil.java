@@ -6,10 +6,6 @@ import com.kapcite.bleindoorpositioning.location.distance.BeaconDistanceCalculat
 
 import java.util.List;
 
-/**
- * Created by steppschuh on 24.11.17.
- */
-
 public abstract class BeaconUtil {
 
     /**
@@ -19,7 +15,7 @@ public abstract class BeaconUtil {
      * @param transmissionPower the tx power (in dBm) of the beacon
      * @return estimated range in meters
      * @see <a href="https://support.kontakt.io/hc/en-gb/articles/201621521-Transmission-power-Range-and-RSSI">Kontakt.io
-     *         Knowledge Base</a>
+     * Knowledge Base</a>
      */
     public static float getAdvertisingRange(int transmissionPower) {
         if (transmissionPower < -30) {

@@ -20,10 +20,6 @@ import java.net.URISyntaxException;
     8        0.00000001       1.11 mm
  */
 
-/**
- * Created by steppschuh on 15.11.17.
- */
-
 public class Location {
 
     public static double VALUE_NOT_SET = 0;
@@ -175,7 +171,7 @@ public class Location {
      * Calculates the angle between two locations in degrees. The result ranges from [0,360),
      * rotating CLOCKWISE, 0 and 360 degrees represents NORTH, 90 degrees represents EAST. This is
      * also referred to as bearing.
-     *
+     * <p>
      * Calculation was derived from this <a href="http://www.igismap.com/formula-to-find-bearing-or-heading-angle-between-two-points-latitude-longitude/">
      * Bearing Calculation formula.</a>
      *

@@ -18,10 +18,6 @@ import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by steppschuh on 15.11.17.
- */
-
 public abstract class Beacon<P extends AdvertisingPacket> {
 
     public static final long MAXIMUM_PACKET_AGE = TimeUnit.SECONDS.toMillis(60);

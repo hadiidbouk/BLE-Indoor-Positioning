@@ -6,10 +6,6 @@ import com.kapcite.bleindoorpositioning.ble.beacon.Beacon;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by leon on 09.01.18.
- */
-
 public abstract class WindowFilter implements RssiFilter {
 
     public static long DEFAULT_DURATION = TimeUnit.SECONDS.toMillis(5);

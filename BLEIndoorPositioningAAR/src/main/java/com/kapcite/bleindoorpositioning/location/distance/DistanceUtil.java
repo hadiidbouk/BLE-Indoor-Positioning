@@ -4,10 +4,6 @@ import com.kapcite.bleindoorpositioning.location.Location;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by steppschuh on 23.11.17.
- */
-
 public abstract class DistanceUtil {
 
     public static final double HUMAN_WALKING_SPEED = 1.388889; // meters per second

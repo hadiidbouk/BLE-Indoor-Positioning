@@ -14,10 +14,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by steppschuh on 07.12.17.
- */
-
 public class BeaconManager {
 
     private static BeaconManager instance;

@@ -8,15 +8,14 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by leon on 02.01.18.
- *
+ * <p>
  * Kalman filtering, also known as linear quadratic estimation (LQE), is an algorithm that uses a
  * series of measurements observed over time, containing statistical noise and other inaccuracies,
  * and produces estimates of unknown variables that tend to be more accurate than those based on a
  * single measurement alone, by using Bayesian inference and estimating a joint probability
  * distribution over the variables for each timeframe.
- *
- *
+ * <p>
+ * <p>
  * Since RSSI signals are largely influenced by signal noise, taking samples from the signal seems
  * likely to be beneficial. Evaluate Unscented Kalman filter
  *

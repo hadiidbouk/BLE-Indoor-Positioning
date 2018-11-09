@@ -4,16 +4,12 @@ import com.kapcite.bleindoorpositioning.location.Location;
 
 import java.util.List;
 
-/**
- * Created by leon on 14.02.18.
- */
-
 public final class AngleUtil {
 
     /**
      * Calculates the mean by converting all angles to corresponding points on the unit circle (i.e.
      * alpha to (cos(alpha), sin(alpha))).
-     *
+     * <p>
      * Caution: circular mean is NOT the arithmetic mean Example: the arithmetic mean of the three
      * angles 0°, 0° and 90° is (0+0+90)/3 = 30°, but the vector mean is 26.565°
      *

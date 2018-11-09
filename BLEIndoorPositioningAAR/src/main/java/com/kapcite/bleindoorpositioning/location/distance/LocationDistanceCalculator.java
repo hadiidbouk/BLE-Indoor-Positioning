@@ -2,10 +2,6 @@ package com.kapcite.bleindoorpositioning.location.distance;
 
 import com.kapcite.bleindoorpositioning.location.Location;
 
-/**
- * Created by steppschuh on 17.11.17.
- */
-
 public abstract class LocationDistanceCalculator {
 
     public static final int EARTH_RADIUS = 6371; // in km
@@ -24,8 +20,7 @@ public abstract class LocationDistanceCalculator {
      * @return Distance in Meters
      * @see <a href="https://stackoverflow.com/a/16794680/1188330">StackOverflow</a>
      */
-    public static double calculateDistanceBetween(double fromLatitude, double fromLongitude, double fromAltitude,
-                                                  double toLatitude, double toLongitude, double toAltitude) {
+    public static double calculateDistanceBetween(double fromLatitude, double fromLongitude, double fromAltitude, double toLatitude, double toLongitude, double toAltitude) {
         double latDistance = Math.toRadians(toLatitude - fromLatitude);
         double lonDistance = Math.toRadians(toLongitude - fromLongitude);
         double a = Math.sin(latDistance / 2) * Math.sin(latDistance / 2)

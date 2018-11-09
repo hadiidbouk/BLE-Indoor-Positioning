@@ -7,19 +7,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-
 /**
  * Stores window of last locations and tries to predict the next location based on average distance
  * and angle during the window
- *
- * Created by leon on 29.01.18.
  */
 
 public class LocationPredictor implements LocationProvider {
 
     /**
      * Locations that the prediction will be based on.
-     *
+     * <p>
      * Note: must be sorted by {@link Location#timestamp} (ascending, oldest location first).
      */
     private List<Location> recentLocations = new ArrayList<>();

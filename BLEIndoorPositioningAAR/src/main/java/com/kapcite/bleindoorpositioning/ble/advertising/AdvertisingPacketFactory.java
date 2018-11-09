@@ -3,10 +3,6 @@ package com.kapcite.bleindoorpositioning.ble.advertising;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by steppschuh on 02.02.18.
- */
-
 public abstract class AdvertisingPacketFactory<AP extends AdvertisingPacket> {
 
     private final Map<Class<AP>, AdvertisingPacketFactory<AP>> subFactoryMap = new HashMap<>();

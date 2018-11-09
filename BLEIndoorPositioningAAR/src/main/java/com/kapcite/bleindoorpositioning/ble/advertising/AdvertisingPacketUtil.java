@@ -8,10 +8,6 @@ import java.util.ListIterator;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by steppschuh on 06.12.17.
- */
-
 public abstract class AdvertisingPacketUtil {
 
     public static String toHexadecimalString(byte[] bytes) {
